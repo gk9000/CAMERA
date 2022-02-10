@@ -139,7 +139,7 @@ public class Camera{
     }
     public void setLight(long light) {
         if(light<=0) {
-            System.out.println("Provide valid light value (from 1 to approx. 1 bln");
+            System.out.println("Provide valid light value (from 1 to approx. 1 bln)");
         } else {
             this.light = light;
             this.initList.removeIf(s -> s==1);
@@ -156,7 +156,7 @@ public class Camera{
             this.filmSpeed = filmSpeed;
             this.initList.removeIf(s -> s==2);
         } else {
-            System.out.println("Provide valid film speed (100, 200, 400, 800, 1600, 3200");
+            System.out.println("Provide valid film speed (100, 200, 400, 800, 1600, 3200)");
         }//close else
     }//close setter
 
@@ -168,7 +168,7 @@ public class Camera{
             this.initList.removeIf(s -> s==3);
         } else {
             System.out.println("Provide a valid focal length (16, 20, 24, 28, 35, 50, 70, 85, 100, 135, 150, 180, 210, 250, 300, 400, 500)");
-        } // close else      "16","20","24","28","35","50","70","85","100","135","150","180","210","250","300","400","500"
+        } // close else      
     }//close setter
 
     // FOR DOUBLE "MAXAPERTURE"

@@ -16,16 +16,21 @@ class OverAndUnder {
         if(camera.getLight()/ camera.longestShutterSpeed<=camera.thisLensApertureTable[0]){
             camera.shutterSpeed=camera.longestShutterSpeed;
             camera.aperture=camera.thisLensApertureTable[0];
-            camera.underexposureWarning=true;
+            if(camera.getLight()/ camera.longestShutterSpeed<camera.thisLensApertureTable[0])
+            {camera.underexposureWarning=true;}
+            
             throw (Throwable) Exception;
 
         } else if (camera.getLight()/ camera.shutterSpeedTable[camera.shutterSpeedTable.length-1]>=
                 camera.thisLensApertureTable[camera.thisLensApertureTable.length-1]){
             camera.shutterSpeed=camera.shutterSpeedTable[camera.shutterSpeedTable.length-1];
             camera.aperture=camera.thisLensApertureTable[camera.thisLensApertureTable.length-1];
-            camera.overexposureWarning=true;
+            if(camera.getLight()/ camera.shutterSpeedTable[camera.shutterSpeedTable.length-1]>
+                    camera.thisLensApertureTable[camera.thisLensApertureTable.length-1])
+            {camera.overexposureWarning=true;}
             throw (Throwable) Exception;
 
         }//close if
     }//close method
 }//close class
+

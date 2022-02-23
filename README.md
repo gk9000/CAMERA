@@ -1,5 +1,5 @@
 # camera
-This program imitates a photo camera software - it calculates exposure (aperture and shutter speed) based on input data. <br>
+This is a photo camera software - it calculates exposure (aperture and shutter speed) based on input data. <br>
 <br>
 [ Quick start if you don't want to read the whole explanation: "UserInterface.java" produces a JavaFX GUI, and "Test.java" is for running the program without a GUI ]<br>
 <br>
